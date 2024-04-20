@@ -1,0 +1,350 @@
+    1  sudo apt install 
+    2  sudo apt update
+    3  docker ps -a
+    4  sudo snap install docker 
+    5  docker ps -a
+    6  docker images
+    7  sudo apt  install docker.io
+    8  docker images
+    9  docker ps -a
+   10  db@db-VirtualBox:~$ docker ps -a
+   11  permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "htt
+   12  exit
+   13  q
+   14  q
+   15  q
+   16  q
+   17  q
+   18  q
+   19  docker ps 
+   20  docker ps -a
+   21  [200~db@db-VirtualBox:~$ docker ps -a
+   22  permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/json?all=1": dial unix /var/run/docker.sock: connect: permission denied
+   23  docker ps -a
+   24  sudo mount /dev/cdrom/media cd/media
+   25  sudo ./VBoxLinuxAdditionals.run
+   26  sudo mount /dev/cdrom/mediacd/media
+   27  sudo ./VBoxLinuxAdditionals.run
+   28  sudo apt update
+   29  sudo apt upgrade
+   30  restart
+   31  sudo apt install build-essential
+   32  sudo restart
+   33  restart
+   34  df -h
+   35  cd /media/db/VBox_GAs_7.0.14/
+   36  ll
+   37  ./VboxLinuxAdditions.run
+   38  ./VBoxLinuxAdditions.run
+   39  sudo ./VBoxLinuxAdditions.run
+   40  exit
+   41  sudo apt update
+   42  sudo apt install nvidia-driver-545
+   43  docker ps -a
+   44  sudo groupadd docker
+   45  sudo usermod -aG docker $USER
+   46  sudo systemctl restart docker
+   47  ls -l /var/run/docker.sock
+   48  docker ps -a
+   49  sudo docker ps -a
+   50  docker ps -a
+   51  su USER
+   52  sudo su
+   53  docker-compose down
+   54  cd homeworkseminar5
+   55  docker-compose down
+   56  sudo docker-compose down
+   57  sudo docker stop 45f2060765cf4238e8f7fed1e63f33a7c932724e8c429a7cb214789393680f9f
+   58  sudo apt remove docker
+   59  sudo apt-get purge docker-engine
+   60  sudo apt-get autoremove --purge docker-engine
+   61  sudo rm -rf /var/lib/docker
+   62  docker-compose ps
+   63  sudo docker-compose ps
+   64  docker-compose down
+   65  sudo docker-compose down
+   66  docker-compose ps
+   67  cd homeworkseminar5/
+   68  docker-compose ps
+   69  docker-compose down
+   70  docker-compose ps
+   71  docker images
+   72  docker rmi nginx 
+   73  docker rmi mysql 
+   74  docker images
+   75  docker ps -a
+   76  nano docker-compose.yml
+   77  sudo nano docker-compose.yml
+   78  sudo nano docker-compose.dev.yml
+   79  sudo nano docker-compose.prod.yml
+   80  sudo nano docker-compose.lab.yml
+   81  sudo nano docker-compose.dev.yml
+   82  sudo nano docker-compose.prod.yml
+   83  sudo nano docker-compose.lab.yml
+   84  sudo docker-compose -f docker-compose.dev.yml up -d
+   85  docker-compose -f docker-compose.prod.yml up -d
+   86  docker-compose -f docker-compose.lab.yml up -d
+   87  sudo docker-compose -f docker-compose.lab.yml up -d
+   88  ll
+   89  sudo nano docker-compose.prod.yml
+   90  sudo nano docker-compose.dev.yml
+   91  sudo nano docker-compose.yml
+   92  sudo docker-compose -f docker-compose.dev.yml up -d
+   93  docker-compose config
+   94  sudo docker-compose -f docker-compose.dev.yml up -d
+   95  sudo docker-compose -f docker-compose.dev.yml down --rmi all -v
+   96  sudo service docker restart
+   97  sudo docker-compose -f docker-compose.dev.yml up -d
+   98  sudo docker-compose -f docker-compose.dev.yml down --rmi all -v
+   99  docker-compose ps
+  100  sudo restart
+  101  restart
+  102  docker --version
+  103  docker info
+  104  cd homeworkseminar5/
+  105  docker info
+  106  ll
+  107  sudo docker-compose -f docker-compose.dev.yml up -d
+  108  ll
+  109  sudo nano docker-compose.yml
+  110  sudo nano docker-compose.dev.yml
+  111  cd homeworkseminar5/
+  112  ll
+  113  sudo nano docker-compose.yml
+  114  sudo docker-compose -f docker-compose.dev.yml up -d
+  115  sudo docker-compose -f docker-compose.dev.yml down --rmi all -v
+  116  sudo docker-compose -f docker-compose.dev.yml up -d
+  117  sudo docker-compose -f docker-compose.dev.yml down --rmi all -v
+  118  sudo docker-compose.yml -f docker-compose.dev.yml up -d
+  119  sudo docker-compose -f docker-compose.dev.yml down --rmi all -v
+  120  sudo docker-compose -f docker-compose.yml up -d
+  121  sudo docker-compose.yml -f docker-compose.dev.yml up -d
+  122  sudo docker-compose -f docker-compose.dev.yml up -d
+  123  sudo nano docker-compose.yml
+  124  sudo docker-compose up
+  125  cd homeworkseminar5/
+  126  ll
+  127  docker-compose ps
+  128  sudo docker-compose -f docker-compose.dev.yml up -d
+  129  sudo docker-compose -f docker-compose.prod.yml up -d
+  130  sudo docker-compose -f docker-compose.lab.yml up -d
+  131  docker-compose down
+  132  cd homeworkseminar5/
+  133  docker-compose down
+  134  cd~
+  135  cd ~
+  136  rm -rf homeworkseminar5/
+  137  ll
+  138  sudo rm -rf homeworkseminar5/
+  139  ll
+  140  docker-compose version
+  141  docker compose
+  142  docker-compose 
+  143  mkdir homeworkseminar5 
+  144  cd homeworkseminar5/
+  145  sudo docker-compose.yml
+  146  sudo nano docker-compose.yml
+  147  ll
+  148  sudo su
+  149  groups
+  150  ll
+  151  sudo nano docker-compose.yml
+  152  ll
+  153  sudo docker compose up -d
+  154  sudo docker-compose up -d
+  155  docker-compose ps
+  156  docker-compose top
+  157  sudo docker-compose down
+  158  sudo doker-compose stop
+  159  sudo docker-compose stop
+  160  docker ps -a
+  161  sudo docker stop 2bd0e6264a73
+  162  sudo su
+  163  cd homeworkseminar5/
+  164  docker-compose down
+  165  cd ~
+  166  docker swarm init
+  167  docker node ls
+  168  cd homeworkseminar5/
+  169  ll
+  170  sudo nano docker-compose.yml
+  171  sudo docker-compose up
+  172  nano docker-compose.yml 
+  173  sudo nano docker-compose.yml
+  174  doker-compose ps
+  175  sudo docker-compose ps
+  176  sudo docker-compose down
+  177  cd homeworkseminar5/
+  178  sudo docker-compose down
+  179  docker-compose ps
+  180  ll
+  181  sudo rm -rf docker-compose.yml 
+  182  ll
+  183  sudo docker swarm init
+  184  docker swarm leave
+  185  docker system prune -a -f
+  186  docker swarm leave
+  187  sudo docker swarm init
+  188  docker swarm leave
+  189  sudo docker swarm leave
+  190  docker system prune -a -f
+  191  sudo docker swarm leave
+  192  sudo docker swarm leave --force
+  193  sudo docker system prune -a -f
+  194  sudo docker swarm init
+  195  sudo nano docker-compose.yml
+  196  [200~sudo docker-compose up -d
+  197  ~sudo docker-compose up -d
+  198  sudo docker-compose up -d
+  199  nano docker-compose.yml
+  200  sudo nano docker-compose.yml
+  201  sudo docker-compose up -d
+  202  cd homeworkseminar5/
+  203  sudo docker-compose up -d
+  204  sudo docker-compose down
+  205  sudo docker-compose up -d
+  206  sudo docker-compose down
+  207  cd homeworkseminar5/
+  208  sudo docker-compose down
+  209  docker-compose ps
+  210  docker compose images
+  211  docker-compose images
+  212  docker images
+  213  sudo docker rmi nginx 
+  214  sudo docker rmi mysql 
+  215  sudo docker rmi phpmyadmin/phpmyadmin
+  216  docker images
+  217  docker-compose ps -a 
+  218  sudo docker-compose up -d
+  219  sudo docker-compose ps
+  220  docker node inspect self
+  221  docker node ls
+  222  docker service ls
+  223  docker service ps kn4w3cgncqfor6kghg6ub1dxb * 
+  224  docker stack ls
+  225  docker service logs kn4w3cgncqfor6kghg6ub1dxb * 
+  226  sudo docker service ls
+  227  docker ps
+  228  docker stack deploy -c docker-compose.yml mystack
+  229  docker service ls
+  230  docker service inspect nginx
+  231  sudo docker service inspect nginx
+  232  [200~docker service inspect nginx
+  233  ~docker service inspect 875d98mg62yg
+  234  docker service ls
+  235  sudo docker service inspect 875d98mg62yg
+  236  sudo docker node ls
+  237  docker service logs x21u5xnytycv
+  238  sudo docker service logs x21u5xnytycv
+  239  sudo docker service logs 875d98mg62yg
+  240  docker service ls
+  241  docker service ps mystack_mysql mystack_nginx mystack_phpmyadmin
+  242  docker service logs mystack_mysql
+  243  docker service logs mystack_nginx
+  244  docker service logs mystack_phpmyadmin
+  245  docker service logs 34cyce0iuwr5
+  246  docker ps
+  247  docker service logs mystack_mysql.1
+  248  docker service create --name mysql --replicas 2 --label env=prod --label env=dev --label env=lab mysql:latest
+  249  docker service create --name mysql2 --replicas 2 --label env=prod --label env=dev --label env=lab mysql:latest
+  250  docker service ls
+  251  docker service rm $(docker service ls -q) --force
+  252  sudo docker service rm $(docker service ls -q) --force
+  253  sudo docker service rm $(docker service ls -q)
+  254  docker service ls
+  255  docker service create --name mysql --replicas 2 --label env=prod --label env=dev --label env=lab mysql:latest
+  256  docker service ls
+  257  docker service create --name nginx --replicas 2 -p 80:80 --label env=prod --label env=dev --label env=lab nginx:latest
+  258  docker service create --name phpmyadmin --replicas 2 -p 8080:80 --label env=prod --label env=dev --label env=lab phpmyadmin/phpmyadmin:latest
+  259  docker service ls
+  260  docker service inspect h6v8uno2r3o3 
+  261  sudo docker service  logs h6v8uno2r3o3  
+  262  docker service rm $(docker service ls -q)
+  263  docker rm -f $(docker ps -aq)
+  264  docker network prune -f
+  265  docker rm -f $(docker ps -aq)
+  266  rm docker-compose.yml
+  267  sudo rm docker-compose.yml
+  268  docker ps
+  269  docker swarm leave
+  270  sudo docker swarm leave
+  271  sudo apt update 
+  272  sudo apt install
+  273  sudo apt upgrade 
+  274  clear
+  275  cat > Pets.txt
+  276  cat > PackAnimals.txt
+  277  cat Pets.txt PackAnimal.txt > HumanFriends.txt
+  278  cat Pets.txt PackAnimals.txt > HumanFriends.txt
+  279  cat HumanFriends.txt
+  280  ll
+  281  ls
+  282  rm Pets.txt
+  283  rm PackAnimals.txt
+  284  rm HumanFriends.txt
+  285  ll
+  286  clear
+  287  ll
+  288  cat > Pets.txt
+  289  cat > PackAnimals.txt
+  290  cat Pats.txt PackAnimals.txt > HumanFriends.txt
+  291  cat Pets.txt PackAnimal.txt > HumanFriends.txt
+  292  cat Pets.txt PackAnimals.txt > HumanFriends.txt
+  293  ll
+  294  cat HumanFriends.txt
+  295  mv HumanFriends.txt HumanFriends
+  296  ls
+  297  clear
+  298  mkdir MyAnimals
+  299  mv HumanFriends MyAnimals/
+  300  ls MyAnimals/
+  301  clear
+  302  sudo apt update
+  303  sudo apt install mysql-server
+  304  [200~sudo apt install mysql-client
+  305  ~sudo apt install mysql-client
+  306  sudo apt install mysql-client
+  307  sudo apt install mysql-workbench
+  308  clear
+  309  find / -name "*.deb"
+  310  sudo dpkg -i package.deb
+  311  clear
+  312  find /usr -name "*.deb"
+  313  sudo updatedb
+  314  locate "*.deb"
+  315  sudo apt install plocate
+  316  locate "*.deb"
+  317  sudo dpkg -i /var/cache/apt/archives/plocate.deb
+  318  sudo dpkg -i /var/cache/apt/archives/liburing2_2.1-2build1_amd64.deb
+  319  cd /var/cache/apt/archives/
+  320  sudo dpkg -i /var/cache/apt/archives/liburing2_2.1-2build1_amd64.deb
+  321  sudo dpkg -i liburing2_2.1-2build1_amd64.deb
+  322  sudo dpkg -i plocate_1.1.15-1ubuntu2_amd64.deb
+  323  sudo dpkg -i /var/cache/apt/archives/plocate_1.1.15-1ubuntu2_amd64.deb
+  324  cd ~
+  325  clear
+  326  sudo apt update 
+  327  sudo apt install htop
+  328  sudo apt remove htop
+  329  clear
+  330  wget http://http.us.debian.org/debian/pool/main/h/htop/htop_2.2.0-2_amd64.deb
+  331  clear
+  332  wget http://mirrors.kernel.org/ubuntu/pool/universe/w/wget/wget_1.20.3-1ubuntu1_amd64.deb
+  333  clear
+  334  sudo dpkg -i firefox.deb
+  335  wget -O firefox.deb "https://download.mozilla.org/?product=firefox-latest&os=linux64&lang=ru"
+  336  sudo dpkg -i firefox.deb
+  337  cd firefox
+  338  cd firefox.deb
+  339  ll
+  340  clear
+  341  sudo dpkg -i deb https://packages.debian.org/buster/libc6 buster main
+  342  clear
+  343  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  344  sudo dpkg -i --force-depends google-chrome-stable_current_amd64.deb
+  345  start Chrome
+  346  start google chrome
+  347  google-chrome
+  348  sudo dpkg -r google-chrome
+  349  sudo dpkg -r google-chrome-stable
+  350  history > command_history.txt

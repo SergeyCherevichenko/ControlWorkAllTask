@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/file.out" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/file.out" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/ru/cherevichenkosn_animalsregisry/Main.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/ru/cherevichenkosn_animalsregisry/Main.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/ru/cherevichenkosn_animalsregisry/model/animalsbulders/PackAnimalsBuilder.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/ru/cherevichenkosn_animalsregisry/model/animalsbulders/PetsAnimalBuilder.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/ru/cherevichenkosn_animalsregisry/model/animalsclases/Animals.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/ru/cherevichenkosn_animalsregisry/model/animalsclases/PackAnimals.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/ru/cherevichenkosn_animalsregisry/model/animalsclases/Pets.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/ru/cherevichenkosn_animalsregisry/model/animalsoperation/PackAnimalOperation.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/ru/cherevichenkosn_animalsregisry/model/animalsoperation/PetsOperation.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/ru/cherevichenkosn_animalsregisry/model/animalsregistres/AnimalsRegistry.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/ru/cherevichenkosn_animalsregisry/view/SortAnimalsByDataBirthday.java" charset="UTF-8" />
+    <file url="PROJECT" charset="windows-1251" />
+  </component>
+</project>

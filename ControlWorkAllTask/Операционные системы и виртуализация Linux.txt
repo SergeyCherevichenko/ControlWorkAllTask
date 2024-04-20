@@ -1,0 +1,1550 @@
+1. Использование команды cat в Linux
+   - Создать два текстовых файла: "Pets"(Домашние животные) и "Pack animals"(вьючные животные), используя команду `cat` в терминале Linux. В первом файле перечислить собак, кошек и хомяков. Во втором — лошадей, верблюдов и ослов.
+   - Объединить содержимое этих двух файлов в один и просмотреть его содержимое.
+   - Переименовать получившийся файл в "Human Friends"(.
+Пример конечного вывода после команды “ls” :
+Desktop Documents Downloads  HumanFriends.txt  Music  PackAnimals.txt  Pets.txt  Pictures  Videos
+
+
+
+
+
+
+b@db-VirtualBox:~$ ll
+
+total 116
+
+drwxr-x--- 15 db   db   4096 Apr 20 21:07 ./
+
+drwxr-xr-x  3 root root 4096 Mar 15 12:57 ../
+
+-rw-------  1 db   db   8192 Mar 17 00:19 .bash_history
+
+-rw-r--r--  1 db   db    220 Mar 15 12:57 .bash_logout
+
+-rw-r--r--  1 db   db   3771 Mar 15 12:57 .bashrc
+
+drwx------ 13 db   db   4096 Mar 16 13:16 .cache/
+
+drwx------ 13 db   db   4096 Mar 16 13:10 .config/
+
+drwxr-xr-x  2 db   db   4096 Mar 16 11:48 Desktop/
+
+drwxr-xr-x  2 db   db   4096 Mar 16 11:48 Documents/
+
+drwxr-xr-x  2 db   db   4096 Mar 16 11:48 Downloads/
+
+drwxrwxr-x  5 db   db   4096 Mar 17 00:11 homeworkseminar5/
+
+drwx------  3 db   db   4096 Mar 16 11:48 .local/
+
+drwxr-xr-x  2 db   db   4096 Mar 16 11:48 Music/
+
+drwxr-xr-x  2 db   db   4096 Mar 16 11:48 Pictures/
+
+-rw-r--r--  1 db   db    807 Mar 15 12:57 .profile
+
+drwxr-xr-x  2 db   db   4096 Mar 16 11:48 Public/
+
+drwx------  5 db   db   4096 Mar 16 12:07 snap/
+
+-rw-r--r--  1 db   db      0 Mar 16 11:49 .sudo_as_admin_successful
+
+drwxr-xr-x  2 db   db   4096 Mar 16 11:48 Templates/
+
+-rw-r-----  1 db   db      6 Apr 14 20:41 .vboxclient-clipboard-tty2-control.pid
+
+-rw-r-----  1 db   db      5 Apr 14 20:41 .vboxclient-clipboard-tty2-service.pid
+
+-rw-r-----  1 db   db      6 Apr 14 20:41 .vboxclient-draganddrop-tty2-control.pid
+
+-rw-r-----  1 db   db      5 Apr 14 20:41 .vboxclient-draganddrop-tty2-service.pid
+
+-rw-r-----  1 db   db      6 Apr 14 20:41 .vboxclient-hostversion-tty2-control.pid
+
+-rw-r-----  1 db   db      6 Apr 14 20:41 .vboxclient-seamless-tty2-control.pid
+
+-rw-r-----  1 db   db      5 Apr 14 20:41 .vboxclient-seamless-tty2-service.pid
+
+-rw-r-----  1 db   db      6 Apr 14 20:41 .vboxclient-vmsvga-session-tty2-control.pid
+
+-rw-r-----  1 db   db      5 Apr 14 20:41 .vboxclient-vmsvga-session-tty2-service.pid
+
+drwxr-xr-x  2 db   db   4096 Mar 16 11:48 Videos/
+
+db@db-VirtualBox:~$ cat > Pets.txt
+
+Собаки
+
+Кошки
+
+Хомяки
+
+db@db-VirtualBox:~$ cat > PackAnimals.txt
+
+Верблюды 
+
+Лошади
+
+Ослы
+
+db@db-VirtualBox:~$ cat Pats.txt PackAnimals.txt > HumanFriends.txt
+
+cat: Pats.txt: No such file or directory
+
+db@db-VirtualBox:~$ cat Pets.txt PackAnimal.txt > HumanFriends.txt
+
+cat: PackAnimal.txt: No such file or directory
+
+db@db-VirtualBox:~$ cat Pets.txt PackAnimals.txt > HumanFriends.txt
+
+db@db-VirtualBox:~$ ll
+
+total 128
+
+drwxr-x--- 15 db   db   4096 Apr 20 21:09 ./
+
+drwxr-xr-x  3 root root 4096 Mar 15 12:57 ../
+
+-rw-------  1 db   db   8192 Mar 17 00:19 .bash_history
+
+-rw-r--r--  1 db   db    220 Mar 15 12:57 .bash_logout
+
+-rw-r--r--  1 db   db   3771 Mar 15 12:57 .bashrc
+
+drwx------ 13 db   db   4096 Mar 16 13:16 .cache/
+
+drwx------ 13 db   db   4096 Mar 16 13:10 .config/
+
+drwxr-xr-x  2 db   db   4096 Mar 16 11:48 Desktop/
+
+drwxr-xr-x  2 db   db   4096 Mar 16 11:48 Documents/
+
+drwxr-xr-x  2 db   db   4096 Mar 16 11:48 Downloads/
+
+drwxrwxr-x  5 db   db   4096 Mar 17 00:11 homeworkseminar5/
+
+-rw-rw-r--  1 db   db     77 Apr 20 21:11 HumanFriends.txt
+
+drwx------  3 db   db   4096 Mar 16 11:48 .local/
+
+drwxr-xr-x  2 db   db   4096 Mar 16 11:48 Music/
+
+-rw-rw-r--  1 db   db     40 Apr 20 21:08 PackAnimals.txt
+
+-rw-rw-r--  1 db   db     37 Apr 20 21:07 Pets.txt
+
+drwxr-xr-x  2 db   db   4096 Mar 16 11:48 Pictures/
+
+-rw-r--r--  1 db   db    807 Mar 15 12:57 .profile
+
+drwxr-xr-x  2 db   db   4096 Mar 16 11:48 Public/
+
+drwx------  5 db   db   4096 Mar 16 12:07 snap/
+
+-rw-r--r--  1 db   db      0 Mar 16 11:49 .sudo_as_admin_successful
+
+drwxr-xr-x  2 db   db   4096 Mar 16 11:48 Templates/
+
+-rw-r-----  1 db   db      6 Apr 14 20:41 .vboxclient-clipboard-tty2-control.pid
+
+-rw-r-----  1 db   db      5 Apr 14 20:41 .vboxclient-clipboard-tty2-service.pid
+
+-rw-r-----  1 db   db      6 Apr 14 20:41 .vboxclient-draganddrop-tty2-control.pid
+
+-rw-r-----  1 db   db      5 Apr 14 20:41 .vboxclient-draganddrop-tty2-service.pid
+
+-rw-r-----  1 db   db      6 Apr 14 20:41 .vboxclient-hostversion-tty2-control.pid
+
+-rw-r-----  1 db   db      6 Apr 14 20:41 .vboxclient-seamless-tty2-control.pid
+
+-rw-r-----  1 db   db      5 Apr 14 20:41 .vboxclient-seamless-tty2-service.pid
+
+-rw-r-----  1 db   db      6 Apr 14 20:41 .vboxclient-vmsvga-session-tty2-control.pid
+
+-rw-r-----  1 db   db      5 Apr 14 20:41 .vboxclient-vmsvga-session-tty2-service.pid
+
+drwxr-xr-x  2 db   db   4096 Mar 16 11:48 Videos/
+
+db@db-VirtualBox:~$ cat HumanFriends.txt
+
+Собаки
+
+Кошки
+
+Хомяки
+
+Верблюды 
+
+Лошади
+
+Ослы
+
+db@db-VirtualBox:~$ mv HumanFriends.txt HumanFriends
+
+db@db-VirtualBox:~$ ls
+
+Desktop  Documents  Downloads  homeworkseminar5  HumanFriends  Music  PackAnimals.txt  Pets.txt  Pictures  Public  snap  Templates  Videos
+
+db@db-VirtualBox:~$ 
+
+
+
+
+
+
+2. Работа с директориями в Linux
+   - Создать новую директорию и переместить туда файл "Human Friends".
+
+
+
+
+db@db-VirtualBox:~$ mkdir MyAnimals
+
+db@db-VirtualBox:~$ mv HumanFriends MyAnimals/
+
+db@db-VirtualBox:~$ ls MyAnimals/
+
+HumanFriends
+
+db@db-VirtualBox:~$ 
+
+
+
+
+
+
+3. Работа с MySQL в Linux. “Установить MySQL на вашу вычислительную машину ”
+   - Подключить дополнительный репозиторий MySQL и установить один из пакетов из этого репозитория.
+Установил mysql-client
+
+
+
+
+db@db-VirtualBox:~$ sudo apt update
+
+[sudo] password for db: 
+
+Hit:1 http://uz.archive.ubuntu.com/ubuntu jammy InRelease
+
+Get:2 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+
+Get:3 http://uz.archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+
+Hit:4 http://uz.archive.ubuntu.com/ubuntu jammy-backports InRelease 
+
+Get:5 http://uz.archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1,597 kB]
+
+Get:6 http://uz.archive.ubuntu.com/ubuntu jammy-updates/main i386 Packages [616 kB]
+
+Get:7 http://uz.archive.ubuntu.com/ubuntu jammy-updates/universe i386 Packages [699 kB]
+
+Get:8 http://uz.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1,070 kB]                                                                                                                 
+
+Fetched 4,212 kB in 9s (459 kB/s)                                                                                                                                                                          
+
+Reading package lists... Done
+
+Building dependency tree... Done
+
+Reading state information... Done
+
+7 packages can be upgraded. Run 'apt list --upgradable' to see them.
+
+db@db-VirtualBox:~$ sudo apt install mysql-server
+
+Reading package lists... Done
+
+Building dependency tree... Done
+
+Reading state information... Done
+
+The following additional packages will be installed:
+
+  libaio1 libcgi-fast-perl libcgi-pm-perl libevent-core-2.1-7 libevent-pthreads-2.1-7 libfcgi-bin libfcgi-perl libfcgi0ldbl libhtml-template-perl libmecab2 libprotobuf-lite23 mecab-ipadic
+
+  mecab-ipadic-utf8 mecab-utils mysql-client-8.0 mysql-common mysql-server-8.0 mysql-server-core-8.0
+
+Suggested packages:
+
+  libipc-sharedcache-perl mailx tinyca
+
+The following NEW packages will be installed:
+
+  libaio1 libcgi-fast-perl libcgi-pm-perl libevent-core-2.1-7 libevent-pthreads-2.1-7 libfcgi-bin libfcgi-perl libfcgi0ldbl libhtml-template-perl libmecab2 libprotobuf-lite23 mecab-ipadic
+
+  mecab-ipadic-utf8 mecab-utils mysql-client-8.0 mysql-common mysql-server mysql-server-8.0 mysql-server-core-8.0
+
+0 upgraded, 19 newly installed, 0 to remove and 7 not upgraded.
+
+Need to get 26.5 MB of archives.
+
+After this operation, 180 MB of additional disk space will be used.
+
+Do you want to continue? [Y/n] y
+
+Get:1 http://uz.archive.ubuntu.com/ubuntu jammy/main amd64 mysql-common all 5.8+1.0.8 [7,212 B]
+
+Get:2 http://uz.archive.ubuntu.com/ubuntu jammy-updates/main amd64 mysql-client-8.0 amd64 8.0.36-0ubuntu0.22.04.1 [22.7 kB]
+
+Get:3 http://uz.archive.ubuntu.com/ubuntu jammy/main amd64 libaio1 amd64 0.3.112-13build1 [7,176 B]
+
+Get:4 http://uz.archive.ubuntu.com/ubuntu jammy/main amd64 libevent-core-2.1-7 amd64 2.1.12-stable-1build3 [93.9 kB]
+
+Get:5 http://uz.archive.ubuntu.com/ubuntu jammy/main amd64 libevent-pthreads-2.1-7 amd64 2.1.12-stable-1build3 [7,642 B]
+
+Get:6 http://uz.archive.ubuntu.com/ubuntu jammy/main amd64 libmecab2 amd64 0.996-14build9 [199 kB]
+
+Get:7 http://uz.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libprotobuf-lite23 amd64 3.12.4-1ubuntu7.22.04.1 [209 kB]
+
+Get:8 http://uz.archive.ubuntu.com/ubuntu jammy-updates/main amd64 mysql-server-core-8.0 amd64 8.0.36-0ubuntu0.22.04.1 [17.5 MB]
+
+Get:9 http://uz.archive.ubuntu.com/ubuntu jammy-updates/main amd64 mysql-server-8.0 amd64 8.0.36-0ubuntu0.22.04.1 [1,437 kB]
+
+Get:10 http://uz.archive.ubuntu.com/ubuntu jammy/main amd64 libcgi-pm-perl all 4.54-1 [188 kB]
+
+Get:11 http://uz.archive.ubuntu.com/ubuntu jammy/main amd64 libfcgi0ldbl amd64 2.4.2-2build2 [28.0 kB]
+
+Get:12 http://uz.archive.ubuntu.com/ubuntu jammy/main amd64 libfcgi-perl amd64 0.82+ds-1build1 [22.8 kB]
+
+Get:13 http://uz.archive.ubuntu.com/ubuntu jammy/main amd64 libcgi-fast-perl all 1:2.15-1 [10.5 kB]
+
+Get:14 http://uz.archive.ubuntu.com/ubuntu jammy/main amd64 libfcgi-bin amd64 2.4.2-2build2 [11.2 kB]
+
+Get:15 http://uz.archive.ubuntu.com/ubuntu jammy/main amd64 libhtml-template-perl all 2.97-1.1 [59.1 kB]
+
+Get:16 http://uz.archive.ubuntu.com/ubuntu jammy/main amd64 mecab-utils amd64 0.996-14build9 [4,850 B]
+
+Get:17 http://uz.archive.ubuntu.com/ubuntu jammy/main amd64 mecab-ipadic all 2.7.0-20070801+main-3 [6,718 kB]
+
+Get:18 http://uz.archive.ubuntu.com/ubuntu jammy/main amd64 mecab-ipadic-utf8 all 2.7.0-20070801+main-3 [4,384 B]                                                                                          
+
+Get:19 http://uz.archive.ubuntu.com/ubuntu jammy-updates/main amd64 mysql-server all 8.0.36-0ubuntu0.22.04.1 [9,460 B]                                                                                     
+
+Fetched 26.5 MB in 7s (3,864 kB/s)                                                                                                                                                                         
+
+Preconfiguring packages ...
+
+Selecting previously unselected package mysql-common.
+
+(Reading database ... 238736 files and directories currently installed.)
+
+Preparing to unpack .../0-mysql-common_5.8+1.0.8_all.deb ...
+
+Unpacking mysql-common (5.8+1.0.8) ...
+
+Selecting previously unselected package mysql-client-8.0.
+
+Preparing to unpack .../1-mysql-client-8.0_8.0.36-0ubuntu0.22.04.1_amd64.deb ...
+
+Unpacking mysql-client-8.0 (8.0.36-0ubuntu0.22.04.1) ...
+
+Selecting previously unselected package libaio1:amd64.
+
+Preparing to unpack .../2-libaio1_0.3.112-13build1_amd64.deb ...
+
+Unpacking libaio1:amd64 (0.3.112-13build1) ...
+
+Selecting previously unselected package libevent-core-2.1-7:amd64.
+
+Preparing to unpack .../3-libevent-core-2.1-7_2.1.12-stable-1build3_amd64.deb ...
+
+Unpacking libevent-core-2.1-7:amd64 (2.1.12-stable-1build3) ...
+
+Selecting previously unselected package libevent-pthreads-2.1-7:amd64.
+
+Preparing to unpack .../4-libevent-pthreads-2.1-7_2.1.12-stable-1build3_amd64.deb ...
+
+Unpacking libevent-pthreads-2.1-7:amd64 (2.1.12-stable-1build3) ...
+
+Selecting previously unselected package libmecab2:amd64.
+
+Preparing to unpack .../5-libmecab2_0.996-14build9_amd64.deb ...
+
+Unpacking libmecab2:amd64 (0.996-14build9) ...
+
+Selecting previously unselected package libprotobuf-lite23:amd64.
+
+Preparing to unpack .../6-libprotobuf-lite23_3.12.4-1ubuntu7.22.04.1_amd64.deb ...
+
+Unpacking libprotobuf-lite23:amd64 (3.12.4-1ubuntu7.22.04.1) ...
+
+Selecting previously unselected package mysql-server-core-8.0.
+
+Preparing to unpack .../7-mysql-server-core-8.0_8.0.36-0ubuntu0.22.04.1_amd64.deb ...
+
+Unpacking mysql-server-core-8.0 (8.0.36-0ubuntu0.22.04.1) ...
+
+Setting up mysql-common (5.8+1.0.8) ...
+
+update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+
+Selecting previously unselected package mysql-server-8.0.
+
+(Reading database ... 238935 files and directories currently installed.)
+
+Preparing to unpack .../00-mysql-server-8.0_8.0.36-0ubuntu0.22.04.1_amd64.deb ...
+
+Unpacking mysql-server-8.0 (8.0.36-0ubuntu0.22.04.1) ...
+
+Selecting previously unselected package libcgi-pm-perl.
+
+Preparing to unpack .../01-libcgi-pm-perl_4.54-1_all.deb ...
+
+Unpacking libcgi-pm-perl (4.54-1) ...
+
+Selecting previously unselected package libfcgi0ldbl:amd64.
+
+Preparing to unpack .../02-libfcgi0ldbl_2.4.2-2build2_amd64.deb ...
+
+Unpacking libfcgi0ldbl:amd64 (2.4.2-2build2) ...
+
+Selecting previously unselected package libfcgi-perl:amd64.
+
+Preparing to unpack .../03-libfcgi-perl_0.82+ds-1build1_amd64.deb ...
+
+Unpacking libfcgi-perl:amd64 (0.82+ds-1build1) ...
+
+Selecting previously unselected package libcgi-fast-perl.
+
+Preparing to unpack .../04-libcgi-fast-perl_1%3a2.15-1_all.deb ...
+
+Unpacking libcgi-fast-perl (1:2.15-1) ...
+
+Selecting previously unselected package libfcgi-bin.
+
+Preparing to unpack .../05-libfcgi-bin_2.4.2-2build2_amd64.deb ...
+
+Unpacking libfcgi-bin (2.4.2-2build2) ...
+
+Selecting previously unselected package libhtml-template-perl.
+
+Preparing to unpack .../06-libhtml-template-perl_2.97-1.1_all.deb ...
+
+Unpacking libhtml-template-perl (2.97-1.1) ...
+
+Selecting previously unselected package mecab-utils.
+
+Preparing to unpack .../07-mecab-utils_0.996-14build9_amd64.deb ...
+
+Unpacking mecab-utils (0.996-14build9) ...
+
+Selecting previously unselected package mecab-ipadic.
+
+Preparing to unpack .../08-mecab-ipadic_2.7.0-20070801+main-3_all.deb ...
+
+Unpacking mecab-ipadic (2.7.0-20070801+main-3) ...
+
+Selecting previously unselected package mecab-ipadic-utf8.
+
+Preparing to unpack .../09-mecab-ipadic-utf8_2.7.0-20070801+main-3_all.deb ...
+
+Unpacking mecab-ipadic-utf8 (2.7.0-20070801+main-3) ...
+
+Selecting previously unselected package mysql-server.
+
+Preparing to unpack .../10-mysql-server_8.0.36-0ubuntu0.22.04.1_all.deb ...
+
+Unpacking mysql-server (8.0.36-0ubuntu0.22.04.1) ...
+
+Setting up libmecab2:amd64 (0.996-14build9) ...
+
+Setting up libfcgi0ldbl:amd64 (2.4.2-2build2) ...
+
+Setting up libcgi-pm-perl (4.54-1) ...
+
+Setting up libfcgi-bin (2.4.2-2build2) ...
+
+Setting up libhtml-template-perl (2.97-1.1) ...
+
+Setting up libprotobuf-lite23:amd64 (3.12.4-1ubuntu7.22.04.1) ...
+
+Setting up mecab-utils (0.996-14build9) ...
+
+Setting up libevent-core-2.1-7:amd64 (2.1.12-stable-1build3) ...
+
+Setting up mysql-client-8.0 (8.0.36-0ubuntu0.22.04.1) ...
+
+Setting up libfcgi-perl:amd64 (0.82+ds-1build1) ...
+
+Setting up libaio1:amd64 (0.3.112-13build1) ...
+
+Setting up libevent-pthreads-2.1-7:amd64 (2.1.12-stable-1build3) ...
+
+Setting up mecab-ipadic (2.7.0-20070801+main-3) ...
+
+Compiling IPA dictionary for Mecab.  This takes long time...
+
+reading /usr/share/mecab/dic/ipadic/unk.def ... 40
+
+emitting double-array: 100% |###########################################| 
+
+/usr/share/mecab/dic/ipadic/model.def is not found. skipped.
+
+reading /usr/share/mecab/dic/ipadic/Conjunction.csv ... 171
+
+reading /usr/share/mecab/dic/ipadic/Noun.proper.csv ... 27328
+
+reading /usr/share/mecab/dic/ipadic/Noun.demonst.csv ... 120
+
+reading /usr/share/mecab/dic/ipadic/Noun.place.csv ... 72999
+
+reading /usr/share/mecab/dic/ipadic/Noun.csv ... 60477
+
+reading /usr/share/mecab/dic/ipadic/Adverb.csv ... 3032
+
+reading /usr/share/mecab/dic/ipadic/Noun.number.csv ... 42
+
+reading /usr/share/mecab/dic/ipadic/Auxil.csv ... 199
+
+reading /usr/share/mecab/dic/ipadic/Symbol.csv ... 208
+
+reading /usr/share/mecab/dic/ipadic/Suffix.csv ... 1393
+
+reading /usr/share/mecab/dic/ipadic/Postp-col.csv ... 91
+
+reading /usr/share/mecab/dic/ipadic/Noun.nai.csv ... 42
+
+reading /usr/share/mecab/dic/ipadic/Adj.csv ... 27210
+
+reading /usr/share/mecab/dic/ipadic/Postp.csv ... 146
+
+reading /usr/share/mecab/dic/ipadic/Interjection.csv ... 252
+
+reading /usr/share/mecab/dic/ipadic/Prefix.csv ... 221
+
+reading /usr/share/mecab/dic/ipadic/Noun.adverbal.csv ... 795
+
+reading /usr/share/mecab/dic/ipadic/Noun.verbal.csv ... 12146
+
+reading /usr/share/mecab/dic/ipadic/Noun.others.csv ... 151
+
+reading /usr/share/mecab/dic/ipadic/Filler.csv ... 19
+
+reading /usr/share/mecab/dic/ipadic/Noun.name.csv ... 34202
+
+reading /usr/share/mecab/dic/ipadic/Others.csv ... 2
+
+reading /usr/share/mecab/dic/ipadic/Verb.csv ... 130750
+
+reading /usr/share/mecab/dic/ipadic/Noun.org.csv ... 16668
+
+reading /usr/share/mecab/dic/ipadic/Adnominal.csv ... 135
+
+reading /usr/share/mecab/dic/ipadic/Noun.adjv.csv ... 3328
+
+emitting double-array: 100% |###########################################| 
+
+reading /usr/share/mecab/dic/ipadic/matrix.def ... 1316x1316
+
+emitting matrix      : 100% |###########################################| 
+
+
+
+done!
+
+update-alternatives: using /var/lib/mecab/dic/ipadic to provide /var/lib/mecab/dic/debian (mecab-dictionary) in auto mode
+
+Setting up libcgi-fast-perl (1:2.15-1) ...
+
+Setting up mysql-server-core-8.0 (8.0.36-0ubuntu0.22.04.1) ...
+
+Setting up mecab-ipadic-utf8 (2.7.0-20070801+main-3) ...
+
+Compiling IPA dictionary for Mecab.  This takes long time...
+
+reading /usr/share/mecab/dic/ipadic/unk.def ... 40
+
+emitting double-array: 100% |###########################################| 
+
+/usr/share/mecab/dic/ipadic/model.def is not found. skipped.
+
+reading /usr/share/mecab/dic/ipadic/Conjunction.csv ... 171
+
+reading /usr/share/mecab/dic/ipadic/Noun.proper.csv ... 27328
+
+reading /usr/share/mecab/dic/ipadic/Noun.demonst.csv ... 120
+
+reading /usr/share/mecab/dic/ipadic/Noun.place.csv ... 72999
+
+reading /usr/share/mecab/dic/ipadic/Noun.csv ... 60477
+
+reading /usr/share/mecab/dic/ipadic/Adverb.csv ... 3032
+
+reading /usr/share/mecab/dic/ipadic/Noun.number.csv ... 42
+
+reading /usr/share/mecab/dic/ipadic/Auxil.csv ... 199
+
+reading /usr/share/mecab/dic/ipadic/Symbol.csv ... 208
+
+reading /usr/share/mecab/dic/ipadic/Suffix.csv ... 1393
+
+reading /usr/share/mecab/dic/ipadic/Postp-col.csv ... 91
+
+reading /usr/share/mecab/dic/ipadic/Noun.nai.csv ... 42
+
+reading /usr/share/mecab/dic/ipadic/Adj.csv ... 27210
+
+reading /usr/share/mecab/dic/ipadic/Postp.csv ... 146
+
+reading /usr/share/mecab/dic/ipadic/Interjection.csv ... 252
+
+reading /usr/share/mecab/dic/ipadic/Prefix.csv ... 221
+
+reading /usr/share/mecab/dic/ipadic/Noun.adverbal.csv ... 795
+
+reading /usr/share/mecab/dic/ipadic/Noun.verbal.csv ... 12146
+
+reading /usr/share/mecab/dic/ipadic/Noun.others.csv ... 151
+
+reading /usr/share/mecab/dic/ipadic/Filler.csv ... 19
+
+reading /usr/share/mecab/dic/ipadic/Noun.name.csv ... 34202
+
+reading /usr/share/mecab/dic/ipadic/Others.csv ... 2
+
+reading /usr/share/mecab/dic/ipadic/Verb.csv ... 130750
+
+reading /usr/share/mecab/dic/ipadic/Noun.org.csv ... 16668
+
+reading /usr/share/mecab/dic/ipadic/Adnominal.csv ... 135
+
+reading /usr/share/mecab/dic/ipadic/Noun.adjv.csv ... 3328
+
+emitting double-array: 100% |###########################################| 
+
+reading /usr/share/mecab/dic/ipadic/matrix.def ... 1316x1316
+
+emitting matrix      : 100% |###########################################| 
+
+
+
+done!
+
+update-alternatives: using /var/lib/mecab/dic/ipadic-utf8 to provide /var/lib/mecab/dic/debian (mecab-dictionary) in auto mode
+
+Setting up mysql-server-8.0 (8.0.36-0ubuntu0.22.04.1) ...
+
+update-alternatives: using /etc/mysql/mysql.cnf to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+
+Renaming removed key_buffer and myisam-recover options (if present)
+
+mysqld will log errors to /var/log/mysql/error.log
+
+mysqld is running as pid 75243
+
+Created symlink /etc/systemd/system/multi-user.target.wants/mysql.service → /lib/systemd/system/mysql.service.
+
+Setting up mysql-server (8.0.36-0ubuntu0.22.04.1) ...
+
+Processing triggers for man-db (2.10.2-1) ...
+
+Processing triggers for libc-bin (2.35-0ubuntu3.7) ...
+
+db@db-VirtualBox:~$ ^[[200~sudo apt install mysql-client
+
+sudo: command not found
+
+db@db-VirtualBox:~$ ~sudo apt install mysql-client
+
+Command '~sudo' not found, did you mean:
+
+  command 'sudo' from deb sudo (1.9.9-1ubuntu2.4)
+
+  command 'sudo' from deb sudo-ldap (1.9.9-1ubuntu2.4)
+
+Try: sudo apt install <deb name>
+
+db@db-VirtualBox:~$ sudo apt install mysql-client
+
+Reading package lists... Done
+
+Building dependency tree... Done
+
+Reading state information... Done
+
+The following NEW packages will be installed:
+
+  mysql-client
+
+0 upgraded, 1 newly installed, 0 to remove and 7 not upgraded.
+
+Need to get 9,354 B of archives.
+
+After this operation, 35.8 kB of additional disk space will be used.
+
+Get:1 http://uz.archive.ubuntu.com/ubuntu jammy-updates/main amd64 mysql-client all 8.0.36-0ubuntu0.22.04.1 [9,354 B]
+
+Fetched 9,354 B in 1s (9,110 B/s)      
+
+Selecting previously unselected package mysql-client.
+
+(Reading database ... 239102 files and directories currently installed.)
+
+Preparing to unpack .../mysql-client_8.0.36-0ubuntu0.22.04.1_all.deb ...
+
+Unpacking mysql-client (8.0.36-0ubuntu0.22.04.1) ...
+
+Setting up mysql-client (8.0.36-0ubuntu0.22.04.1) ...
+
+
+
+4. Управление deb-пакетами
+   - Установить и затем удалить deb-пакет, используя команду `dpkg`.
+
+
+
+
+Установил и удалил google-chrome-stable
+db@db-VirtualBox:~$ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+--2024-04-20 23:00:39--  https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+Resolving dl.google.com (dl.google.com)... 142.250.74.142, 2a00:1450:400f:80d::200e
+
+Connecting to dl.google.com (dl.google.com)|142.250.74.142|:443... connected.
+
+HTTP request sent, awaiting response... 200 OK
+
+Length: 107128128 (102M) [application/x-debian-package]
+
+Saving to: ‘google-chrome-stable_current_amd64.deb’
+
+
+
+google-chrome-stable_current_amd64.deb             100%[================================================================================================================>] 102.17M  4.09MB/s    in 39s     
+
+
+
+2024-04-20 23:01:18 (2.64 MB/s) - ‘google-chrome-stable_current_amd64.deb’ saved [107128128/107128128]
+
+
+
+db@db-VirtualBox:~$ sudo dpkg -i --force-depends google-chrome-stable_current_amd64.deb
+
+Selecting previously unselected package google-chrome-stable.
+
+(Reading database ... 239125 files and directories currently installed.)
+
+Preparing to unpack google-chrome-stable_current_amd64.deb ...
+
+Unpacking google-chrome-stable (124.0.6367.60-1) ...
+
+Setting up google-chrome-stable (124.0.6367.60-1) ...
+
+update-alternatives: using /usr/bin/google-chrome-stable to provide /usr/bin/x-www-browser (x-www-browser) in auto mode
+
+update-alternatives: using /usr/bin/google-chrome-stable to provide /usr/bin/gnome-www-browser (gnome-www-browser) in auto mode
+
+update-alternatives: using /usr/bin/google-chrome-stable to provide /usr/bin/google-chrome (google-chrome) in auto mode
+
+Processing triggers for mailcap (3.70+nmu1ubuntu1) ...
+
+Processing triggers for gnome-menus (3.36.0-1ubuntu3) ...
+
+Processing triggers for desktop-file-utils (0.26-1ubuntu3) ...
+
+Processing triggers for man-db (2.10.2-1) ...
+
+db@db-VirtualBox:~$ start Chrome
+
+Command 'start' not found, did you mean:
+
+  command 'stars' from snap stars (2.7jrc3)
+
+  command 'rstart' from deb x11-session-utils (7.7+4build2)
+
+  command 'tart' from deb tart (3.10-1build1)
+
+  command 'stat' from deb coreutils (8.32-4.1ubuntu1)
+
+  command 'kstart' from deb kde-cli-tools (4:5.24.4-0ubuntu1)
+
+  command 'startx' from deb xinit (1.4.1-0ubuntu4)
+
+See 'snap info <snapname>' for additional versions.
+
+db@db-VirtualBox:~$ start google chrome
+
+Command 'start' not found, did you mean:
+
+  command 'stars' from snap stars (2.7jrc3)
+
+  command 'stat' from deb coreutils (8.32-4.1ubuntu1)
+
+  command 'tart' from deb tart (3.10-1build1)
+
+  command 'startx' from deb xinit (1.4.1-0ubuntu4)
+
+  command 'kstart' from deb kde-cli-tools (4:5.24.4-0ubuntu1)
+
+  command 'rstart' from deb x11-session-utils (7.7+4build2)
+
+See 'snap info <snapname>' for additional versions.
+
+db@db-VirtualBox:~$ google-chrome
+
+Created TensorFlow Lite XNNPACK delegate for CPU.
+
+[77561:77561:0420/230351.441821:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.ScreenSaver.GetActive: object_path= /org/freedesktop/ScreenSaver: org.freedesktop.DBus.Error.NotSupported: This method is not implemented
+
+db@db-VirtualBox:~$ sudo dpkg -r google-chrome
+
+dpkg: warning: ignoring request to remove google-chrome which isn't installed
+
+db@db-VirtualBox:~$ sudo dpkg -r google-chrome-stable
+
+(Reading database ... 239238 files and directories currently installed.)
+
+Removing google-chrome-stable (124.0.6367.60-1) ...
+
+update-alternatives: using /usr/bin/firefox to provide /usr/bin/x-www-browser (x-www-browser) in auto mode
+
+update-alternatives: using /usr/bin/firefox to provide /usr/bin/gnome-www-browser (gnome-www-browser) in auto mode
+
+Processing triggers for man-db (2.10.2-1) ...
+
+Processing triggers for mailcap (3.70+nmu1ubuntu1) ...
+
+Processing triggers for gnome-menus (3.36.0-1ubuntu3) ...
+
+Processing triggers for desktop-file-utils (0.26-1ubuntu3) ...
+
+db@db-VirtualBox:~$ 
+
+
+
+db@db-VirtualBox:~$ history > command_history.txt
+
+db@db-VirtualBox:~$ history
+
+    1  sudo apt install 
+
+    2  sudo apt update
+
+    3  docker ps -a
+
+    4  sudo snap install docker 
+
+    5  docker ps -a
+
+    6  docker images
+
+    7  sudo apt  install docker.io
+
+    8  docker images
+
+    9  docker ps -a
+
+   10  db@db-VirtualBox:~$ docker ps -a
+
+   11  permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "htt
+
+   12  exit
+
+   13  q
+
+   14  q
+
+   15  q
+
+   16  q
+
+   17  q
+
+   18  q
+
+   19  docker ps 
+
+   20  docker ps -a
+
+   21  db@db-VirtualBox:~$ docker ps -a
+
+   22  permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/json?all=1": dial unix /var/run/docker.sock: connect: permission denied
+
+   23  docker ps -a
+
+   24  sudo mount /dev/cdrom/media cd/media
+
+   25  sudo ./VBoxLinuxAdditionals.run
+
+   26  sudo mount /dev/cdrom/mediacd/media
+
+   27  sudo ./VBoxLinuxAdditionals.run
+
+   28  sudo apt update
+
+   29  sudo apt upgrade
+
+   30  restart
+
+   31  sudo apt install build-essential
+
+   32  sudo restart
+
+   33  restart
+
+   34  df -h
+
+   35  cd /media/db/VBox_GAs_7.0.14/
+
+   36  ll
+
+   37  ./VboxLinuxAdditions.run
+
+   38  ./VBoxLinuxAdditions.run
+
+   39  sudo ./VBoxLinuxAdditions.run
+
+   40  exit
+
+   41  sudo apt update
+
+   42  sudo apt install nvidia-driver-545
+
+   43  docker ps -a
+
+   44  sudo groupadd docker
+
+   45  sudo usermod -aG docker $USER
+
+   46  sudo systemctl restart docker
+
+   47  ls -l /var/run/docker.sock
+
+   48  docker ps -a
+
+   49  sudo docker ps -a
+
+   50  docker ps -a
+
+   51  su USER
+
+   52  sudo su
+
+   53  docker-compose down
+
+   54  cd homeworkseminar5
+
+   55  docker-compose down
+
+   56  sudo docker-compose down
+
+   57  sudo docker stop 45f2060765cf4238e8f7fed1e63f33a7c932724e8c429a7cb214789393680f9f
+
+   58  sudo apt remove docker
+
+   59  sudo apt-get purge docker-engine
+
+   60  sudo apt-get autoremove --purge docker-engine
+
+   61  sudo rm -rf /var/lib/docker
+
+   62  docker-compose ps
+
+   63  sudo docker-compose ps
+
+   64  docker-compose down
+
+   65  sudo docker-compose down
+
+   66  docker-compose ps
+
+   67  cd homeworkseminar5/
+
+   68  docker-compose ps
+
+   69  docker-compose down
+
+   70  docker-compose ps
+
+   71  docker images
+
+   72  docker rmi nginx 
+
+   73  docker rmi mysql 
+
+   74  docker images
+
+   75  docker ps -a
+
+   76  nano docker-compose.yml
+
+   77  sudo nano docker-compose.yml
+
+   78  sudo nano docker-compose.dev.yml
+
+   79  sudo nano docker-compose.prod.yml
+
+   80  sudo nano docker-compose.lab.yml
+
+   81  sudo nano docker-compose.dev.yml
+
+   82  sudo nano docker-compose.prod.yml
+
+   83  sudo nano docker-compose.lab.yml
+
+   84  sudo docker-compose -f docker-compose.dev.yml up -d
+
+   85  docker-compose -f docker-compose.prod.yml up -d
+
+   86  docker-compose -f docker-compose.lab.yml up -d
+
+   87  sudo docker-compose -f docker-compose.lab.yml up -d
+
+   88  ll
+
+   89  sudo nano docker-compose.prod.yml
+
+   90  sudo nano docker-compose.dev.yml
+
+   91  sudo nano docker-compose.yml
+
+   92  sudo docker-compose -f docker-compose.dev.yml up -d
+
+   93  docker-compose config
+
+   94  sudo docker-compose -f docker-compose.dev.yml up -d
+
+   95  sudo docker-compose -f docker-compose.dev.yml down --rmi all -v
+
+   96  sudo service docker restart
+
+   97  sudo docker-compose -f docker-compose.dev.yml up -d
+
+   98  sudo docker-compose -f docker-compose.dev.yml down --rmi all -v
+
+   99  docker-compose ps
+
+  100  sudo restart
+
+  101  restart
+
+  102  docker --version
+
+  103  docker info
+
+  104  cd homeworkseminar5/
+
+  105  docker info
+
+  106  ll
+
+  107  sudo docker-compose -f docker-compose.dev.yml up -d
+
+  108  ll
+
+  109  sudo nano docker-compose.yml
+
+  110  sudo nano docker-compose.dev.yml
+
+  111  cd homeworkseminar5/
+
+  112  ll
+
+  113  sudo nano docker-compose.yml
+
+  114  sudo docker-compose -f docker-compose.dev.yml up -d
+
+  115  sudo docker-compose -f docker-compose.dev.yml down --rmi all -v
+
+  116  sudo docker-compose -f docker-compose.dev.yml up -d
+
+  117  sudo docker-compose -f docker-compose.dev.yml down --rmi all -v
+
+  118  sudo docker-compose.yml -f docker-compose.dev.yml up -d
+
+  119  sudo docker-compose -f docker-compose.dev.yml down --rmi all -v
+
+  120  sudo docker-compose -f docker-compose.yml up -d
+
+  121  sudo docker-compose.yml -f docker-compose.dev.yml up -d
+
+  122  sudo docker-compose -f docker-compose.dev.yml up -d
+
+  123  sudo nano docker-compose.yml
+
+  124  sudo docker-compose up
+
+  125  cd homeworkseminar5/
+
+  126  ll
+
+  127  docker-compose ps
+
+  128  sudo docker-compose -f docker-compose.dev.yml up -d
+
+  129  sudo docker-compose -f docker-compose.prod.yml up -d
+
+  130  sudo docker-compose -f docker-compose.lab.yml up -d
+
+  131  docker-compose down
+
+  132  cd homeworkseminar5/
+
+  133  docker-compose down
+
+  134  cd~
+
+  135  cd ~
+
+  136  rm -rf homeworkseminar5/
+
+  137  ll
+
+  138  sudo rm -rf homeworkseminar5/
+
+  139  ll
+
+  140  docker-compose version
+
+  141  docker compose
+
+  142  docker-compose 
+
+  143  mkdir homeworkseminar5 
+
+  144  cd homeworkseminar5/
+
+  145  sudo docker-compose.yml
+
+  146  sudo nano docker-compose.yml
+
+  147  ll
+
+  148  sudo su
+
+  149  groups
+
+  150  ll
+
+  151  sudo nano docker-compose.yml
+
+  152  ll
+
+  153  sudo docker compose up -d
+
+  154  sudo docker-compose up -d
+
+  155  docker-compose ps
+
+  156  docker-compose top
+
+  157  sudo docker-compose down
+
+  158  sudo doker-compose stop
+
+  159  sudo docker-compose stop
+
+  160  docker ps -a
+
+  161  sudo docker stop 2bd0e6264a73
+
+  162  sudo su
+
+  163  cd homeworkseminar5/
+
+  164  docker-compose down
+
+  165  cd ~
+
+  166  docker swarm init
+
+  167  docker node ls
+
+  168  cd homeworkseminar5/
+
+  169  ll
+
+  170  sudo nano docker-compose.yml
+
+  171  sudo docker-compose up
+
+  172  nano docker-compose.yml 
+
+  173  sudo nano docker-compose.yml
+
+  174  doker-compose ps
+
+  175  sudo docker-compose ps
+
+  176  sudo docker-compose down
+
+  177  cd homeworkseminar5/
+
+  178  sudo docker-compose down
+
+  179  docker-compose ps
+
+  180  ll
+
+  181  sudo rm -rf docker-compose.yml 
+
+  182  ll
+
+  183  sudo docker swarm init
+
+  184  docker swarm leave
+
+  185  docker system prune -a -f
+
+  186  docker swarm leave
+
+  187  sudo docker swarm init
+
+  188  docker swarm leave
+
+  189  sudo docker swarm leave
+
+  190  docker system prune -a -f
+
+  191  sudo docker swarm leave
+
+  192  sudo docker swarm leave --force
+
+  193  sudo docker system prune -a -f
+
+  194  sudo docker swarm init
+
+  195  sudo nano docker-compose.yml
+
+  196  sudo docker-compose up -d
+
+  197  ~sudo docker-compose up -d
+
+  198  sudo docker-compose up -d
+
+  199  nano docker-compose.yml
+
+  200  sudo nano docker-compose.yml
+
+  201  sudo docker-compose up -d
+
+  202  cd homeworkseminar5/
+
+  203  sudo docker-compose up -d
+
+  204  sudo docker-compose down
+
+  205  sudo docker-compose up -d
+
+  206  sudo docker-compose down
+
+  207  cd homeworkseminar5/
+
+  208  sudo docker-compose down
+
+  209  docker-compose ps
+
+  210  docker compose images
+
+  211  docker-compose images
+
+  212  docker images
+
+  213  sudo docker rmi nginx 
+
+  214  sudo docker rmi mysql 
+
+  215  sudo docker rmi phpmyadmin/phpmyadmin
+
+  216  docker images
+
+  217  docker-compose ps -a 
+
+  218  sudo docker-compose up -d
+
+  219  sudo docker-compose ps
+
+  220  docker node inspect self
+
+  221  docker node ls
+
+  222  docker service ls
+
+  223  docker service ps kn4w3cgncqfor6kghg6ub1dxb * 
+
+  224  docker stack ls
+
+  225  docker service logs kn4w3cgncqfor6kghg6ub1dxb * 
+
+  226  sudo docker service ls
+
+  227  docker ps
+
+  228  docker stack deploy -c docker-compose.yml mystack
+
+  229  docker service ls
+
+  230  docker service inspect nginx
+
+  231  sudo docker service inspect nginx
+
+  232  docker service inspect nginx
+
+  233  ~docker service inspect 875d98mg62yg
+
+  234  docker service ls
+
+  235  sudo docker service inspect 875d98mg62yg
+
+  236  sudo docker node ls
+
+  237  docker service logs x21u5xnytycv
+
+  238  sudo docker service logs x21u5xnytycv
+
+  239  sudo docker service logs 875d98mg62yg
+
+  240  docker service ls
+
+  241  docker service ps mystack_mysql mystack_nginx mystack_phpmyadmin
+
+  242  docker service logs mystack_mysql
+
+  243  docker service logs mystack_nginx
+
+  244  docker service logs mystack_phpmyadmin
+
+  245  docker service logs 34cyce0iuwr5
+
+  246  docker ps
+
+  247  docker service logs mystack_mysql.1
+
+  248  docker service create --name mysql --replicas 2 --label env=prod --label env=dev --label env=lab mysql:latest
+
+  249  docker service create --name mysql2 --replicas 2 --label env=prod --label env=dev --label env=lab mysql:latest
+
+  250  docker service ls
+
+  251  docker service rm $(docker service ls -q) --force
+
+  252  sudo docker service rm $(docker service ls -q) --force
+
+  253  sudo docker service rm $(docker service ls -q)
+
+  254  docker service ls
+
+  255  docker service create --name mysql --replicas 2 --label env=prod --label env=dev --label env=lab mysql:latest
+
+  256  docker service ls
+
+  257  docker service create --name nginx --replicas 2 -p 80:80 --label env=prod --label env=dev --label env=lab nginx:latest
+
+  258  docker service create --name phpmyadmin --replicas 2 -p 8080:80 --label env=prod --label env=dev --label env=lab phpmyadmin/phpmyadmin:latest
+
+  259  docker service ls
+
+  260  docker service inspect h6v8uno2r3o3 
+
+  261  sudo docker service  logs h6v8uno2r3o3  
+
+  262  docker service rm $(docker service ls -q)
+
+  263  docker rm -f $(docker ps -aq)
+
+  264  docker network prune -f
+
+  265  docker rm -f $(docker ps -aq)
+
+  266  rm docker-compose.yml
+
+  267  sudo rm docker-compose.yml
+
+  268  docker ps
+
+  269  docker swarm leave
+
+  270  sudo docker swarm leave
+
+  271  sudo apt update 
+
+  272  sudo apt install
+
+  273  sudo apt upgrade 
+
+  274  clear
+
+  275  cat > Pets.txt
+
+  276  cat > PackAnimals.txt
+
+  277  cat Pets.txt PackAnimal.txt > HumanFriends.txt
+
+  278  cat Pets.txt PackAnimals.txt > HumanFriends.txt
+
+  279  cat HumanFriends.txt
+
+  280  ll
+
+  281  ls
+
+  282  rm Pets.txt
+
+  283  rm PackAnimals.txt
+
+  284  rm HumanFriends.txt
+
+  285  ll
+
+  286  clear
+
+  287  ll
+
+  288  cat > Pets.txt
+
+  289  cat > PackAnimals.txt
+
+  290  cat Pats.txt PackAnimals.txt > HumanFriends.txt
+
+  291  cat Pets.txt PackAnimal.txt > HumanFriends.txt
+
+  292  cat Pets.txt PackAnimals.txt > HumanFriends.txt
+
+  293  ll
+
+  294  cat HumanFriends.txt
+
+  295  mv HumanFriends.txt HumanFriends
+
+  296  ls
+
+  297  clear
+
+  298  mkdir MyAnimals
+
+  299  mv HumanFriends MyAnimals/
+
+  300  ls MyAnimals/
+
+  301  clear
+
+  302  sudo apt update
+
+  303  sudo apt install mysql-server
+
+  304  sudo apt install mysql-client
+
+  305  ~sudo apt install mysql-client
+
+  306  sudo apt install mysql-client
+
+  307  sudo apt install mysql-workbench
+
+  308  clear
+
+  309  find / -name "*.deb"
+
+  310  sudo dpkg -i package.deb
+
+  311  clear
+
+  312  find /usr -name "*.deb"
+
+  313  sudo updatedb
+
+  314  locate "*.deb"
+
+  315  sudo apt install plocate
+
+  316  locate "*.deb"
+
+  317  sudo dpkg -i /var/cache/apt/archives/plocate.deb
+
+  318  sudo dpkg -i /var/cache/apt/archives/liburing2_2.1-2build1_amd64.deb
+
+  319  cd /var/cache/apt/archives/
+
+  320  sudo dpkg -i /var/cache/apt/archives/liburing2_2.1-2build1_amd64.deb
+
+  321  sudo dpkg -i liburing2_2.1-2build1_amd64.deb
+
+  322  sudo dpkg -i plocate_1.1.15-1ubuntu2_amd64.deb
+
+  323  sudo dpkg -i /var/cache/apt/archives/plocate_1.1.15-1ubuntu2_amd64.deb
+
+  324  cd ~
+
+  325  clear
+
+  326  sudo apt update 
+
+  327  sudo apt install htop
+
+  328  sudo apt remove htop
+
+  329  clear
+
+  330  wget http://http.us.debian.org/debian/pool/main/h/htop/htop_2.2.0-2_amd64.deb
+
+  331  clear
+
+  332  wget http://mirrors.kernel.org/ubuntu/pool/universe/w/wget/wget_1.20.3-1ubuntu1_amd64.deb
+
+  333  clear
+
+  334  sudo dpkg -i firefox.deb
+
+  335  wget -O firefox.deb "https://download.mozilla.org/?product=firefox-latest&os=linux64&lang=ru"
+
+  336  sudo dpkg -i firefox.deb
+
+  337  cd firefox
+
+  338  cd firefox.deb
+
+  339  ll
+
+  340  clear
+
+  341  sudo dpkg -i deb https://packages.debian.org/buster/libc6 buster main
+
+  342  clear
+
+  343  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+  344  sudo dpkg -i --force-depends google-chrome-stable_current_amd64.deb
+
+  345  start Chrome
+
+  346  start google chrome
+
+  347  google-chrome
+
+  348  sudo dpkg -r google-chrome
+
+  349  sudo dpkg -r google-chrome-stable
+
+  350  history > command_history.txt
+
+  351  history
+
+db@db-VirtualBox:~$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
